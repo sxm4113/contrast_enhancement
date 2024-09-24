@@ -66,7 +66,7 @@ void MainFrame::OnButton1Clicked(wxCommandEvent& evt)
 
 void MainFrame::OnButton2Clicked(wxCommandEvent& evt)
 {
-	wxLogStatus("button2 clicked");
+	wxLogStatus("Multiscale Morphology");
 	drawPanel->button2();
 }
  

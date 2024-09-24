@@ -36,7 +36,7 @@ void MultiscaleMorphology::run_algorithm()
 	cv::Mat sum_blackhat = 0.9 * blackhat3 + 0.5 * blackhat5 + 0.3 * blackhat7  ;
 	cv::Mat sum_tophat = 0.9 * tophat3 + 0.5 * tophat5 + 0.3 * tophat7 ;
 
-	morpology_result = sum_blackhat + sum_tophat + input_image; 
+	morpology_result = input_image - sum_blackhat + sum_tophat;
 }
 
 cv::Mat MultiscaleMorphology::get_result()
